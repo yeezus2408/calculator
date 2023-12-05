@@ -15,16 +15,16 @@
             <div class="cam">
 
             </div>
-            <b class="content">1</b>
+            <b class="content" id="content"></b>
         </div>
         <div class="board">
             <table>
                 <div class="table">
                     <tr><td>C</td><td>%</td><td><img src="assets/levo.png.png" alt=""></td><td><img src="assets/del.png.png" alt=""></td></tr>
-                    <tr><td>7</td><td>8</td><td>9</td><td>X</td></tr>
-                    <tr><td>4</td><td>5</td><td>6</td><td>-</td></tr>
-                    <tr><td onclick='app()' id="test" value=1>1</td><td>2</td><td>3</td><td>+</td></tr>
-                    <tr><td>00</td><td>0</td><td>,</td><td><img src="assets/ravno.png.png" alt=""></td></tr>
+                    <tr><td onclick='app(this)' value=7>7</td><td onclick='app(this)' value=8>8</td><td onclick='app(this)' value=9>9</td><td>X</td></tr>
+                    <tr><td onclick='app(this)' value=4>4</td><td onclick='app(this)' value=5>5</td><td onclick='app(this)' value=6>6</td><td>-</td></tr>
+                    <tr><td onclick='app(this)' value=1>1</td><td onclick='app(this)' value=2>2</td><td onclick='app(this)' value=3>3</td><td onclick='app(this)' value=1>+</td></tr>
+                    <tr><td onclick='app(this)' value=00>00</td><td onclick='app(this)' value=0>0</td><td onclick='app(this)' value=1>,</td><td onclick="oper(this)" value="="><img src="assets/ravno.png.png" alt=""></td></tr>
                 </div>
             </table>
         </div>
