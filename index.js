@@ -1,12 +1,24 @@
-let a = ""
+let a = "";
+let b = "";
+let c = OPERATIONS;
 function app (btn){
     let Value = btn.getAttribute("value")
     a+=Value
-    let el = document.querySelector('content');
-    document.getElementById('content').textContent = a;
+    let el = document.getElementById('content');
+    el.textContent = a;
+}
+
+function cleardiv(btn){
+    let Value = btn.getAttribute('value')
+    a = ''
+    let el = document.getElementById('content');
+    el.textContent = a
+
 }
 
 function oper(op){
     let value = op.getAttribute('value');
-    console.log(value)
+    let el = document.getElementById('content')
+    
+
 }
