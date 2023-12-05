@@ -1,11 +1,9 @@
-let a = []
+let a = ""
 function app (btn){
     let Value = btn.getAttribute("value")
-    a.push(Number(Value))
-    var num = a.join('');
-    num = Number(a);
+    a+=Value
     let el = document.querySelector('content');
-    document.getElementById('content').textContent = num;
+    document.getElementById('content').textContent = a;
 }
 
 function oper(op){
