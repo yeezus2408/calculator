@@ -1,24 +1,40 @@
-let a = "";
-let b = "";
-let c = OPERATIONS;
-function app (btn){
-    let Value = btn.getAttribute("value")
-    a+=Value
-    let el = document.getElementById('content');
-    el.textContent = a;
-}
+let a = ''
+let b = ''
+let operation = ''
+let result = false
 
-function cleardiv(btn){
-    let Value = btn.getAttribute('value')
+const digit = ['0','1','2','3','4','5','6','7','8','9',]
+const action = ['-','+','X','/',]
+
+const screen = document.getElementById('content')
+
+function clearAll() {   
     a = ''
-    let el = document.getElementById('content');
-    el.textContent = a
-
+    b = ''
+    operation = ''
+    result = false
+    screen.textContent = 0;
 }
 
-function oper(op){
-    let value = op.getAttribute('value');
-    let el = document.getElementById('content')
-    
+document.querySelector('.ac').onclick = clearAll;
 
+document.querySelector('.board').onclick = (event) => {
+    if (!event.target.classList.contains('btn')) return;
+    if (event.target.classList.contains('ac')) return;
+
+    screen.textContent = ''
+
+    const key = event.target.textContent;
+    if (digit.includes(key)){
+        a+=key
+        console.log(a, b, operation)
+        screen.textContent = a
+    }
+
+    if(action.includes(key)) {
+        operation = key
+        screen.textContent = operation
+        console.log(a, b, operation)
+        return
+    }
 }

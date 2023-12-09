@@ -15,16 +15,18 @@
             <div class="cam">
 
             </div>
-            <b class="content" id="content"></b>
+            <div class="content" id="content">
+                0
+            </div>
         </div>
         <div class="board">
             <table>
-                <div class="table">
-                    <tr><td onclick='cleardiv(this)'>C</td><td>%</td><td><img src="assets/levo.png.png" alt=""></td><td><img src="assets/del.png.png" alt=""></td></tr>
-                    <tr><td onclick='app(this)' value=7>7</td><td onclick='app(this)' value=8>8</td><td onclick='app(this)' value=9>9</td><td>X</td></tr>
-                    <tr><td onclick='app(this)' value=4>4</td><td onclick='app(this)' value=5>5</td><td onclick='app(this)' value=6>6</td><td>-</td></tr>
-                    <tr><td onclick='app(this)' value=1>1</td><td onclick='app(this)' value=2>2</td><td onclick='app(this)' value=3>3</td><td onclick='app(this)' value=1>+</td></tr>
-                    <tr><td onclick='app(this)' value=00>00</td><td onclick='app(this)' value=0>0</td><td onclick='app(this)' value=".">,</td><td onclick="oper(this)" value="="><img src="assets/ravno.png.png" alt=""></td></tr>
+                <div class="buttons">
+                    <tr><td class="btn ac">C</td><td>%</td><td><img src="assets/levo.png.png" alt=""></td><td><img src="assets/del.png.png" alt=""></td></tr>
+                    <tr><td class="btn seven">7</td><td class="btn eight">8</td><td class="btn nine">9</td><td class="btn X">X</td></tr>
+                    <tr><td class="btn four">4</td><td class="btn five">5</td><td class="btn six">6</td><td class="btn minus">-</td></tr>
+                    <tr><td class="btn one">1</td><td class="btn two">2</td><td class="btn three">3</td><td class="btn plus">+</td></tr>
+                    <tr><td class="btn doubleZero">00</td><td class="btn zero">0</td><td class="btn dot">,</td><td class="btn result"><img src="assets/ravno.png.png" alt=""></td></tr>
                 </div>
             </table>
         </div>
