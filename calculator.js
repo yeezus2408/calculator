@@ -12,7 +12,7 @@ function calculator(a, b, operation) {
 
     switch (operation) {
         case OPERATIONS.sum:
-            result = sum(a,b)
+            result = (+a) + (+b)
             break;
 
         case OPERATIONS.difference:
