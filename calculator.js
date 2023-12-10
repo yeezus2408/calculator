@@ -1,14 +1,14 @@
 const OPERATIONS = {
     sum: '+',
     difference: '-',
-    multiplication: '*',
+    multiplication: 'X',
     division: '/',
     pows: '**',
     percent: '%'
 }
 
 function calculator(a, b, operation) {
-    let result = null;
+    let result = 0;
 
     switch (operation) {
         case OPERATIONS.sum:
@@ -37,6 +37,6 @@ function calculator(a, b, operation) {
         default:
             break;
     }
-
+    console.log(result)
     return result
 }
