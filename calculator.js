@@ -3,7 +3,7 @@ const OPERATIONS = {
     difference: '-',
     multiplication: 'X',
     division: '/',
-    pows: '**',
+    pows: '^',
     percent: '%'
 }
 
@@ -27,7 +27,7 @@ function calculator(a, b, operation) {
         break
 
         case OPERATIONS.pows:
-            result = pows(a,b)
+            result = Math.pow(a,b)
         break
 
         case OPERATIONS.percent:
